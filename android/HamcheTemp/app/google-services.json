@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976967908346",
+    "project_id": "hamche-temp",
+    "storage_bucket": "hamche-temp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976967908346:android:1d89f7e71c1594f162c243",
+        "android_client_info": {
+          "package_name": "com.example.hamchetemp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976967908346-u5a92n048jkftqmcshd7mnlh7aq3ro8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDAz0AOfKfcHoB_6t1_3ma4FtRkf8tYrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976967908346-u5a92n048jkftqmcshd7mnlh7aq3ro8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
