@@ -2,6 +2,7 @@ package com.example.hamchetemp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -72,9 +73,17 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("Log", ">>>>>>>> GET 완료 : " + result);
                     DataParsing dataParsing = new DataParsing();
                     parsedData = dataParsing.getParsedData(result);
+                    text_humi.setTextColor(Color.rgb(72,72,72));
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+                            float temp =Float.parseFloat(parsedData[0]);
+                            float humi = Float.parseFloat(parsedData[1]);
+                            if(temp <16 || temp>24){
+                                text_temp.setTextColor(Color.RED);
+                            }else{
+                                text_temp.setTextColor(Color.rgb(72,72,72));
+                            }
                             text_temp.setText(parsedData[0] + "°C");
                             text_humi.setText(parsedData[1] + "%");
                         }

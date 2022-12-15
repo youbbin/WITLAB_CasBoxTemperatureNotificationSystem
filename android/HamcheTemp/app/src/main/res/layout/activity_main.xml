@@ -83,12 +83,13 @@
                         android:textAlignment="center" />
 
                     <TextView
+                        android:id="@+id/text_temp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="00도"
-                        android:id="@+id/text_temp"
+                        android:text="00°C"
                         android:textAlignment="center"
-                        android:textSize="40dp" />
+                        android:textSize="40dp"
+                        android:textColor="#727272"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -133,7 +134,8 @@
                         android:text="00%"
                         android:textAlignment="center"
                         android:textSize="40dp"
-                        android:id="@+id/text_humi"/>
+                        android:id="@+id/text_humi"
+                        android:textColor="#727272"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
